@@ -1,0 +1,32 @@
+    <mat-card class="sign-in-card">
+        <div id="all">
+            <form [formGroup]="dataForSignIn" (ngSubmit)="submit()">
+                <mat-card-header>
+                    <mat-card-title>Login</mat-card-title>
+                  </mat-card-header>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="text" formControlName="email" name="email" />
+                        <mat-error>
+                            {{ errorMessagesService.getFormErrorMessage(dataForSignIn.get('email')) }}
+                          </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" >
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput type="password" formControlName="password" name="password" />              
+                        <mat-error>
+                            {{ errorMessagesService.getFormErrorMessage(dataForSignIn.get('password')) }}
+                          </mat-error>
+                    </mat-form-field>
+                    <button type="submit" mat-flat-button color="primary" class="sign-in-button">Ingresar</button>
+            </form>
+        </div>
+        <div id="spin">
+            <mat-spinner id="loadingSpinner" class="loading"></mat-spinner>
+        </div>
+        
+        
+    </mat-card>
+
+    
+

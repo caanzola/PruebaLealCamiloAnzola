@@ -1,0 +1,76 @@
+@import '../../styles.scss';
+
+table {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  :host {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: $gradient;
+  }
+
+  .sign-in-card {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+
+
+  button {
+    margin: 16px 8px;
+  }
+
+  mat-form-field{
+    padding: 15px;
+    background-color: rgb(241, 241, 241);
+  }
+
+  tr.example-element-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+  }
+
+.filtros{
+  margin-top: 20px;
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+}
+
+  mat-chip-list {
+    margin: 20px 8px;
+  }
+
+  .botoncitos {
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chips{
+    display: none;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texto{
+      color: white;
+      margin-top: 30px;
+      font-size: 3rem;
+  }
+
+  .texto2{
+    color: white;
+    margin-top: 30px;
+    font-size: 1rem;
+}
